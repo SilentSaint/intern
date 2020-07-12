@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_2_);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_3_);}
+	.st3{fill:#262322;}
+	.st4{font-family:'Panton-ExtraLight';}
+	.st5{font-size:146.6055px;}
+</style>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="164.6656" y1="754.6799" x2="515.3344" y2="196.7977" gradientTransform="matrix(1 5.748214e-03 -5.748214e-03 1 -5.9926 -5.0769)">
+		<stop  offset="0" style="stop-color:#72BF44"/>
+		<stop  offset="1" style="stop-color:#6FBD45"/>
+	</linearGradient>
+	<polygon class="st0" points="268.71,308.15 266.95,615.11 472.19,513.96 472.78,411.66 370.16,462.23 370.75,359.9 	"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="343.3972" y1="524.9274" x2="720.6364" y2="-54.2091" gradientTransform="matrix(1 5.748214e-03 -5.748214e-03 1 -5.9926 -5.0769)">
+		<stop  offset="0" style="stop-color:#0898D0"/>
+		<stop  offset="1" style="stop-color:#72D0F4"/>
+	</linearGradient>
+	<polygon class="st1" points="370.75,359.9 472.78,411.66 473.37,309.33 575.38,361.08 678.01,310.51 371.93,155.24 	"/>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="485.2246" y1="662.3722" x2="788.0781" y2="210.7531" gradientTransform="matrix(1 5.748214e-03 -5.748214e-03 1 -5.9926 -5.0769)">
+		<stop  offset="0" style="stop-color:#F15938"/>
+		<stop  offset="0.4348" style="stop-color:#EC462F"/>
+		<stop  offset="1" style="stop-color:#E51E25"/>
+	</linearGradient>
+	<polygon class="st2" points="472.78,411.66 574.79,463.4 472.19,513.96 471.6,616.29 779.45,464.58 575.38,361.08 	"/>
+</g>
+<text transform="matrix(1 0 0 1 310.339 808.8383)" class="st3 st4 st5">khetra</text>
+</svg>
