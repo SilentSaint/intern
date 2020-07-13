@@ -153,3 +153,36 @@ hr{
 h1,h2,h3,h4,h5,h6{
     overflow-y : hidden;
 }
+
+//Numbers
+#num {
+  font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.count {
+  display: block;
+  font-size: 24px;
+  padding: 60px;
+  font-weight: 600;
+  width: 25%;
+  color: #035aa6;
+}
+
+.container {
+  display: flex;
+}
+
+.Num {
+  text-align: center;
+}
+
+.insideBox {
+  width: 25%;
+}
