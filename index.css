@@ -198,10 +198,12 @@ h1,h2,h3,h4,h5,h6{
 .count {
   display: block;
   font-size: 24px;
-  padding: 60px;
+  padding: auto auto ;
+  text-align: center;
   font-weight: 600;
   width: 25%;
-  color: #035aa6;
+  color: #fff;
+  margin: 0 35% 0 37%;
 }
 
 .container {
@@ -210,6 +212,10 @@ h1,h2,h3,h4,h5,h6{
 
 .Num {
   text-align: center;
+  color: white;
+  background-color:  #035aa6;
+  padding: 50px 25px 25px 25px;
+  margin: 10px auto 10px auto;
 }
 
 .insideBox {
@@ -219,9 +225,14 @@ h1,h2,h3,h4,h5,h6{
 /*fade in effect*/
 .fade-in {
   opacity: 0;
-  transition: opacity 400ms ease-in;
+  transition: opacity 1000ms ease-in;
 }
 
 .fade-in.appear {
   opacity: 1;
+}
+
+/*nav bar Scroll*/
+.nav-scroll {
+  color: Black;
 }

@@ -1,3 +1,4 @@
+const header=document.querySelector("header");
 
 const faders = document.querySelectorAll(".fade-in");
 const appearOptions = {
@@ -9,6 +10,7 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
     if (!entry.isIntersecting) {
       return;
     }else {
+      console.log(entry.target.classList);
       entry.target.classList.add('appear');
       appearOnScroll.unobserve(entry.target);
     }
