@@ -110,6 +110,10 @@ nav{
 
 /* About us sections */
 
+#about-us{
+  height: 100vh;
+}
+
 .about-us-heading{
     background-color: #79d70f;    /* company #6EBE44*/
     color: #fff;
@@ -154,7 +158,32 @@ h1,h2,h3,h4,h5,h6{
     overflow-y : hidden;
 }
 
-//Numbers
+/* why-us section */
+.why-us{
+  background-color: #035aa6;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding : 3em 0;
+}
+
+#why-us{
+  height : 100vh;
+}
+
+.services {
+  text-align: center;
+  margin: 2.5em 0;
+}
+
+.services-row{
+  margin : 2em 2em;
+}
+
+.services-img {
+  margin-top :1.5em;
+}
+/* Numbers */
 #num {
   font-family: Montserrat;
     font-size: 12px;
