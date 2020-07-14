@@ -33,3 +33,20 @@ const countOnScroll = new IntersectionObserver(function(entries, countOnScroll){
 countSection.forEach(fader => {
   countOnScroll.observe(fader);
 });
+
+
+//header and topbar jss
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) {
+    $('#header').addClass('header-scrolled');
+    $('#topbar').addClass('topbar-scrolled');
+  } else {
+    $('#header').removeClass('header-scrolled');
+    $('#topbar').removeClass('topbar-scrolled');
+  }
+});
+
+if ($(window).scrollTop() > 100) {
+  $('#header').addClass('header-scrolled');
+  $('#topbar').addClass('topbar-scrolled');
+}
