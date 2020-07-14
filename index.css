@@ -222,17 +222,6 @@ h1,h2,h3,h4,h5,h6{
   width: 25%;
 }
 
-/*fade in effect*/
-.fade-in {
-  opacity: 0;
-  transition: opacity 1000ms ease-in;
-}
-
-.fade-in.appear {
-  opacity: 1;
-}
-
-/*nav bar Scroll*/
-.nav-scroll {
-  color: Black;
+.Num p {
+  font-size: 20px;
 }
