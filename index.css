@@ -10,11 +10,66 @@ font-family: 'Oswald', sans-serif;
 
 *{
     box-sizing : border-box;
-    margin: 0;
-    padding : 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
 }
 
-/* Contact bar */
+a {
+  color: #106eea;
+}
+
+a:hover {
+  color: #3b8af2;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #106eea;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+  background: #3284f1;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/* -------------------------------------------------------------
+ # Topbar
+ --------------------------------------------------------------- */
 #topbar {
   background: #106eea;
   height: 40px;
@@ -105,7 +160,9 @@ font-family: 'Oswald', sans-serif;
     font-size: 28px;
   }
 }
-/* Desktop Navigation */
+/*-------------------------------------------------------------------
+ # Desktop Navigation 
+ ---------------------------------------------------------------------*/
 
 .khetra-logo{
   width : 5%;
@@ -236,7 +293,9 @@ font-family: 'Oswald', sans-serif;
   }
 }
 
-/* Mobile Navigation */
+/*---------------------------------------------------------------------
+ Mobile Navigation
+ ------------------------------------------------------------------------ */
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -343,109 +402,15 @@ font-family: 'Oswald', sans-serif;
   color: #fff;
 }
 
-
-
-/* nav{
-    background: transparent;
+/*---------------------------------------------------------------
+Carousel Section
+-------------------------------------------------------------------*/
+@media screen and (min-width : 992px){
+  #hero {
+    margin-top : 112px;
+  }
 }
 
-.main{
-    background: url(images/people-harvesting-2131784.jpg);
-    background-size: 100%;
-    height: 100vh;
-    width: 100vw;
-}
-
-#title{
-    text-align: center;
-    position: relative;
-    top : 25%;
-    font-family: 'Fondamento', cursive ;
-}
-#subtitle{
-    text-align: center;
-    position: relative;
-    top : 25%;
-    font-weight: 600;
-}
-.main-hr{
-    position: relative;
-    border: 0;
-    height: 1px;
-    background: #333;
-    /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
-    /* top : 25%;
-    width: 25%;
-}
-
-.navbar-brand{
-    font-family: 'Bangers', cursive;
-    /* font-weight: bold; */
-/* }
- *
-/ */
-/* scroll down css */
-/*
-.scroll-btn-wrapper {
-    text-align: center;
-    position: absolute;
-    bottom: 17px;
-    left: 0;
-    right: 0;
-    z-index: 2; }
-    @media (max-width: 768px) {
-      .scroll-btn-wrapper {
-        bottom: 0; } }
-    .scroll-btn-wrapper .scroll-down {
-      display: inline-block;
-      color: rgba(0, 0, 0, 1);
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 10px;
-      font-size: 1rem;
-      letter-spacing: .1em; }
-      @media (max-width: 768px) {
-        .scroll-btn-wrapper .scroll-down {
-          font-size: 0px;
-          font-size: 0rem; } }
-      .scroll-btn-wrapper .scroll-down img {
-        display: block;
-        margin: 0 auto 12px;
-        position: relative;
-        -webkit-animation-name: scroll-down;
-                animation-name: scroll-down;
-        -webkit-animation-duration: 1.2s;
-                animation-duration: 1.2s;
-        -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite; }
-        @media (max-width: 768px) {
-          .scroll-btn-wrapper .scroll-down img {
-            max-width: 12px; } }
-      .scroll-btn-wrapper .scroll-down:hover,
-      .scroll-btn-wrapper .scroll-down:focus,
-      .scroll-btn-wrapper .scroll-down:active {
-        text-decoration: none;
-        color: rgba(0, 0, 0, 1); }
-        @-webkit-keyframes scroll-down {
-          0% {
-            top: 0; }
-          50% {
-            top: 6px; }
-          100% {
-            top: 0; } }
-        @keyframes scroll-down {
-          0% {
-            top: 0; }
-          50% {
-            top: 6px; }
-          100% {
-            top: 0; } }
-
-.scroll-down-img {
-    width : 10%;
-/* } */
-
-/* Carousel Section */
 #hero {
   width: 100%;
   height: calc(100vh - 114px);
@@ -493,7 +458,8 @@ font-family: 'Oswald', sans-serif;
 
 @media (max-width: 992px) {
   #hero, #hero .carousel-item {
-    height: calc(100vh - 70px);
+    margin-top: 30px;
+    height: calc(100vh);
   }
   #hero .carousel-content.container {
     padding: 0 50px;
@@ -557,7 +523,7 @@ font-family: 'Oswald', sans-serif;
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -571,7 +537,7 @@ font-family: 'Oswald', sans-serif;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 0;
-  background: #428bca;
+  background: #106eea;
 }
 
 #hero .btn-get-started:hover {
@@ -593,7 +559,133 @@ font-family: 'Oswald', sans-serif;
   }
 }
 
-/* About us sections */
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f9fe;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: #e7f1fd;
+  color: #106eea;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.section-title h3 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.section-title h3 span {
+  color: #106eea;
+}
+
+.section-title p {
+  margin: 15px auto 0 auto;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .section-title p {
+    width: 50%;
+  }
+}
+
+/* ------------------------------------------------------------------------
+ # Featured Services Section
+  ---------------------------------------------------------------------------- */
+  .featured-services h1 {
+    text-align: center;
+    margin: 0 1em 1em;
+    color: #106eea;
+
+  }
+  .featured-services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  .featured-services .icon-box::before {
+    content: '';
+    position: absolute;
+    background: #cbe0fb;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  .featured-services .icon-box:hover::before {
+    background: #106eea;
+    top: 0;
+    border-radius: 0px;
+  }
+
+  .featured-services .icon {
+    margin-bottom: 15px;
+  }
+
+  .featured-services .icon i {
+    font-size: 48px;
+    line-height: 1;
+    color: #106eea;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .featured-services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .featured-services .title a {
+    color: #111;
+  }
+
+  .featured-services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+
+  .featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description {
+    color: #fff;
+  }
+
+  .featured-services .icon-box:hover .icon i {
+    color: #fff;
+  }
+
+/* =============================================
+ #About us sections
+ ================================================*/
 
 #about-us{
   height: 100vh;
@@ -601,7 +693,7 @@ font-family: 'Oswald', sans-serif;
 }
 
 .about-us-heading{
-    background-color: #79d70f;    /* company #6EBE44*/
+    background-color: #106eea;   /*  company #6EBE44   another option #79d70f */
     color: #fff;
     text-align: center;
     width: 100%;
@@ -651,7 +743,7 @@ div.col-sm-3 {
  width: 25%;
 }
  */
- .column {
+ /* .column {
   float: left;
   width: 30%;
   height: 100%;
@@ -709,16 +801,9 @@ div.col-sm-3 {
   transform: scaleX(1);
   color: white;
 
-}
+} */
 
 
-
-
-/* miscellaneous */
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Oswald', sans-serif;
-    overflow-y : hidden;
-}
 
 /* why-us section */
 .why-us{
@@ -768,9 +853,9 @@ h1,h2,h3,h4,h5,h6{
   margin: 0 35% 0 37%;
 }
 
-.container {
+/* .container {
   display: flex;
-}
+} */
 
 .Num {
   text-align: center;

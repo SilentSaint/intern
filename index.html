@@ -13,6 +13,7 @@
 
   <!-- Vendor Stylesheets -->
   <link rel="stylesheet" href="icofont/icofont.min.css">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
   <!-- Stylesheets -->
@@ -21,11 +22,14 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-  <title>Hello, world!</title>
+  <title>Khetra</title>
 </head>
 
 <body>
-  <!-- contact bar -->
+  <button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
+  <!-- =========================================================================================================
+    contact bar  please add social links in this section
+  ============================================================================================================ -->
   <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
@@ -41,15 +45,17 @@
       </div>
     </div>
   </div>
-  <!-- navbar  and header-->
+  <!-- ====================================================================================================
+     navbar  and header
+    ========================================================================================================-->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <img src="images/Khetra_1.svg" class="khetra-logo" alt="khetra-logo">
+      <img src="images/Khetra_1.svg" class="khetra-logo d-none d-lg-block" alt="khetra-logo">
       <h1 class="logo mr-auto"><a href="index.html" style="font-family: 'Fondamento', cursive;">Khetra<span>.</span></a></h1>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about-us">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#buyer-page">Buyer</a></li>
           <li><a href="#seller-page">Seller</a></li>
@@ -59,7 +65,9 @@
       </nav>
     </div>
   </header>
-  <!-- Carousel Section -->
+  <!-- =================================================================================================================
+      Carousel Section
+      ================================================================================================================-->
   <section id="hero">
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -73,8 +81,8 @@
             <div class="carousel-container">
               <div class="carousel-content container">
                 <h2 class="animate__animated animate__fadeInDown">Welcome to <span style="font-family: 'Fondamento', cursive;">Khetra</span></h2>
-                <!-- <p class="animate__animated animate__fadeInUp"></p> -->
-                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+                <p class="animate__animated animate__fadeInUp">Please add some description here</p>
+                <a href="#about-us" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
               </div>
             </div>
           </div>
@@ -83,9 +91,9 @@
           <div class="carousel-item" style="background-image: url('images/green-tractor-175389.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Reinventing Indian Agri-business</h2>
-                <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
-                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+                <h2 class="animate__animated animate__fadeInDown">Please add a Title here</h2>
+                <p class="animate__animated animate__fadeInUp">Please add description here</p>
+                <a href="#about-us" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
               </div>
             </div>
           </div>
@@ -94,13 +102,12 @@
           <div class="carousel-item" style="background-image: url('images/green-plantation-field-under-blue-and-white-cloudy-sky-62568.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Something to be added</h2>
-                <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
-                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+                <h2 class="animate__animated animate__fadeInDown">Add title here</h2>
+                <p class="animate__animated animate__fadeInUp">Please Add description here</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
               </div>
             </div>
           </div>
-
         </div>
 
         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
@@ -114,45 +121,54 @@
 
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <main id="main"></main>
+  <!-- ===============================================================================================================
+     Our Services Section Section
+    =====================================================================================================================-->
+    <section id="featured-services" class="featured-services">
+      <h1>What we Offer</h1>
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Service 1</a></h4>
+              <p class="description">Every Page is hosting thier main services</p>
+            </div>
+          </div>
 
-  <!-- <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="images/Khetra_1.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        Khetra
-      </a>      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-3 active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="#">Buyer</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="#">Seller</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="#">Contact us</a>
-          </li>
-          <button type="button" class="btn btn-success mx-3">Sign up</button>
-        </ul>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Service 2</a></h4>
+              <p class="description">After the header so that the customer dont have</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Service 3</a></h4>
+              <p class="description">to scroll the whole page to get to know about the website</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Service 4</a></h4>
+              <p class="description">So it would be good to mention our best services here</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </nav>
-    <div class="main">
-      <h1 class="display-1 overflow" id="title">Khetra</h1>
-      <hr class="main-hr">
-      <h1 class="display-4 overflow" id="subtitle">Reinventing Indian Agri-Business</h1>
-      <div class="scroll-btn-wrapper">
-        <a href="#about-us" class="scroll-down"><img class="scroll-down-img" src="images/trans.png" alt="mouse image">Scroll Down</a>
-    </div>
-    </div>
-  </header> -->
+    </section>
 
-<!-- About Us section -->
+    <!-- ====================================================================
+    #About us
+  ==================================================================== -->
   <article id="about-us" data-aos="zoom-in-up">
     <div class="about-us-heading">
         <h4 class="display-4">About Us</h4>
@@ -161,7 +177,7 @@
 
     <div class="about-us-content" data-aos="zoom-in-up">
   <h3 class="display-4 overflow">Simplicity is our key</h3>
-      <!-- <div class="container-fluid">
+      <div class="container-fluid">
         <div class="row features">
           <div class="col-lg-4">
             <img class="feature-images" src="images/leverage.png" alt="leverage icon" data-aos="zoom-out-down">
@@ -179,11 +195,8 @@
               <p>We charge transaction fee covering 8%-20% of sale value based on category.</p>
           </div>
         </div>
-      </div> -->
-
-
-
-    <div class="row">
+      </div>
+    <!-- <div class="row">
   <div class="column">
     <div class="card">
       <img src="images/leverage.png" alt="leverage icon">
@@ -209,7 +222,7 @@
   </div>
 </div>
     </div>
-  </article>
+  </article> -->
 
   <!-- Why us section -->
 
@@ -316,7 +329,7 @@
   </div>
    </div>
 
-
+   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
