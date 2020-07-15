@@ -13,6 +13,7 @@
 
   <!-- Vendor Stylesheets -->
   <link rel="stylesheet" href="icofont/icofont.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="index.css">
@@ -44,7 +45,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       <img src="images/Khetra_1.svg" class="khetra-logo" alt="khetra-logo">
-      <h1 class="logo mr-auto"><a href="index.html">Khetra<span>.</span></a></h1>
+      <h1 class="logo mr-auto"><a href="index.html" style="font-family: 'Fondamento', cursive;">Khetra<span>.</span></a></h1>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
@@ -59,46 +60,61 @@
     </div>
   </header>
   <!-- Carousel Section -->
-  <div class="bd-example ">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/apple-business-fruit-local-95425.jpg" class="d-block w-100 ex" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('images/people-harvesting-2131784.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span style="font-family: 'Fondamento', cursive;">Khetra</span></h2>
+                <!-- <p class="animate__animated animate__fadeInUp"></p> -->
+                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/assorted-fruits-on-person-s-hand-1459339.jpg" class="d-block w-100 ex" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('images/green-tractor-175389.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Reinventing Indian Agri-business</h2>
+                <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
+                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/sunset-field-of-grain-5980.jpg" class="d-block w-100 ex" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url('images/green-plantation-field-under-blue-and-white-cloudy-sky-62568.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Something to be added</h2>
+                <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
+                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+              </div>
+            </div>
           </div>
+
         </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-  </div>
+  </section><!-- End Hero -->
 
   <!-- <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
