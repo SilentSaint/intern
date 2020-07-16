@@ -1,39 +1,58 @@
-Number.prototype.format = function(n) {
-    var r = new RegExp('\\d(?=(\\d{3})+' + (n > 0 ? '\\.' : '$') + ')', 'g');
-    return this.toFixed(Math.max(0, Math.floor(n))).replace(r, '$&,');
-};
+
+// Number.prototype.format = function(n) {
+//     var r = new RegExp('\\d(?=(\\d{3})+' + (n > 0 ? '\\.' : '$') + ')', 'g');
+//     return this.toFixed(Math.max(0, Math.floor(n))).replace(r, '$&,');
+// };
 
 
-const countSection = document.querySelectorAll(".Num");
-const countOptions = {
-  threshold: 0.15,
-  rootMargin: "0px 0px -75px 0px"
-};
-const countOnScroll = new IntersectionObserver(function(entries, countOnScroll){
-  entries.forEach( entry => {
-    if (!entry.isIntersecting) {
-      return;
-    }else {
-      $('.count').each(function () {
-          $(this).prop('counter', 0).animate({
-              counter: $(this).text()
-          }, {
-              duration: 2000,
-              easing: 'easeOutExpo',
-              step: function (step) {
-                  $(this).text('' + step.format());
-              }
-          });
-      });
-    }
-  });
+// const countSection = document.querySelectorAll(".counts");
+// const countOptions = {
+//   threshold: 0.15,
+//   rootMargin: "0px 0px -75px 0px"
+// };
+// const countOnScroll = new IntersectionObserver(function(entries, countOnScroll){
+//   entries.forEach( entry => {
+//     if (!entry.isIntersecting) {
+//       return;
+//     }else {
+//       $('.count').each(function () {
+//           $(this).prop('counter', 0).animate({
+//               counter: $(this).text()
+//           }, {
+//               duration: 2000,
+//               easing: 'easeOutExpo',
+//               step: function (step) {
+//                   $(this).text('' + step.format());
+//               }
+//           });
+//       });
+//     }
+//   });
 
-},countOptions);
+// },countOptions);
 
-countSection.forEach(fader => {
-  countOnScroll.observe(fader);
+// countSection.forEach(fader => {
+//   countOnScroll.observe(fader);
+// });
+
+// var visited = false
+// var waypoint = new Waypoint({
+//   element: document.getElementById('counter-section'),
+//   handler: function(direction) {
+//     if(direction == "down" && visited == false){
+//       $('[data-toggle="counter-up"]').counterUp({
+//         delay: 10,
+//         time: 1000
+//       });
+//       visited = true
+//     }
+//   }
+// })
+
+$('[data-toggle="counter-up"]').counterUp({
+  delay: 10,
+  time: 1000
 });
-
 
 //header and topbar jss
 $(window).scroll(function() {
@@ -115,13 +134,4 @@ heroCarousel.on('slid.bs.carousel', function(e) {
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
     return false;
-  });
-
-  // Skills section
-  $('.skills-content').waypoint(function() {
-    $('.progress .progress-bar').each(function() {
-      $(this).css("width", $(this).attr("aria-valuenow") + '%');
-    });
-  }, {
-    offset: '80%'
   });
