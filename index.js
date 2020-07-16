@@ -125,5 +125,3 @@ heroCarousel.on('slid.bs.carousel', function(e) {
   }, {
     offset: '80%'
   });
-
-
