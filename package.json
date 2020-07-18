@@ -2,9 +2,12 @@
   "name": "khetra.com",
   "version": "1.0.0",
   "description": "khetra official website",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
-    "counterup": "^1.0.2"
+    "body-parser": "^1.19.0",
+    "counterup": "^1.0.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {},
   "scripts": {
@@ -14,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/SilentSaint/intern.git"
   },
-  "author": "rakshith gowda g & shree vatsa hegde",
+  "author": "rakshith gowda g & shreevatsa hegde",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SilentSaint/intern/issues"
