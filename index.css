@@ -151,18 +151,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #106eea;
 }
 
-#header .logo img {
+/* #header .logo img {
   max-height: 40px;
-}
+} */
 
 @media (max-width: 992px) {
   #header {
     padding: 15px;
     top: 0;
   }
-  #header .logo {
+  /* #header .logo {
     font-size: 28px;
-  }
+  } */
 }
 /*-------------------------------------------------------------------
  # Desktop Navigation
@@ -859,9 +859,6 @@ section {
   padding : 3em 0;
 }
 
-#why-us{
-  height : 100vh;
-}
 
 #why-us .icon{
   font-size : 48px;
@@ -902,7 +899,8 @@ section {
 
 .counts .count-box span {
   font-size: 42px;
-  display: block;
+  display: inline-block;
+  text-align: center;
   font-weight: 700;
   color: #1c5c93;
 }
